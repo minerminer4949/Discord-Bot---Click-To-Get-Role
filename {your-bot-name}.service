@@ -1,0 +1,10 @@
+[Unit]
+Description={your-bot-name} Bot Service
+
+[Service]
+ExecStart=/usr/bin/python3 /usr/bin/py-scripts/{your-bot-name}.py
+Environment=PYTHONUNBUFFERED=1
+User={your-bot-name}_bot_service
+
+[Install]
+WantedBy=default.target
